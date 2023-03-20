@@ -164,6 +164,6 @@ class Vitex:
         res = requests.get(url)
         return res.json();   
 
-vitex = Vitex("D1B948F684EE821E17BA16912961F0CB", "3625EF6F013BBED6F61706007BDD1DB6")
+vitex = Vitex(ACESS_KEY, SECRET_KEY)
 print (vitex.place_order_test("ETH-000_BTC-000", "10", "100", 0))
 
